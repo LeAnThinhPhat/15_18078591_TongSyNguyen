@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_card"
+    android:backgroundTint="#128f91"
+    >
+
+    <ImageView
+        android:id="@+id/imagesA"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/caramel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/tvNameA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Name Coffee"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imagesA"
+        app:layout_constraintTop_toBottomOf="@+id/imagesA"></TextView>
+
+    <TextView
+        android:id="@+id/tvPriceA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price"
+        android:textColor="#dffc2c"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvNameA"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameA"></TextView>
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:numStars="5"
+        android:progressTint="#dffc2c"
+        android:rating="3.5"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceA"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceA"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameA"
+        app:layout_constraintVertical_bias="0.347"></RatingBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
